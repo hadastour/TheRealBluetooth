@@ -53,12 +53,7 @@ public class Main extends AppCompatActivity implements AdapterView.OnItemClickLi
     public DeviceListAdapter mDeviceListAdapter;
 
     ListView lvNewDevices;
-
-    TextView textView;
-
     StringBuilder message;
-
-
     int i, rngl, rngr, head;
     byte elev;
     int n=1;
@@ -208,7 +203,6 @@ public class Main extends AppCompatActivity implements AdapterView.OnItemClickLi
         btnEnableDisable_Discoverable = (Button) findViewById(R.id.btnDiscoverable_on_off);
         lvNewDevices = (ListView) findViewById(R.id.lvNewDevices);
         mBTDevices = new ArrayList<>();
-        textView= (TextView) findViewById(R.id.textView);
         btnStartConnection = (Button) findViewById(R.id.btnStartConnection);
         btnSend = (Button) findViewById(R.id.btnSend);
 
@@ -285,7 +279,7 @@ public class Main extends AppCompatActivity implements AdapterView.OnItemClickLi
         public void onReceive(Context context, Intent intent) {
             String Text = intent.getStringExtra("theMessage");
             message.append(Text +"/");
-            textView.setText(message);
+          //  textView.setText(message);
             //  Toast.makeText(MainActivity.this, Text, Toast.LENGTH_LONG).show();
 
         }

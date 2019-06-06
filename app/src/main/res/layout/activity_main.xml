@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Main">
+
+
+    <Button
+        android:id="@+id/btnONOFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:text="ON/OFF"
+        android:textSize="18dp"
+        android:textColor="#FAF7F7"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnDiscoverable_on_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:onClick="btnEnableDisable_Discoverable"
+        android:text="Enable Discoverable"
+        android:textColor="#FAF7F7"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnFindUnpairedDevices"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:onClick="btnDiscover"
+        android:text="Discover"
+        android:textColor="#FAF7F7"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lvNewDevices"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/btnStartConnection"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/btnStartConnection"
+        android:layout_width="243dp"
+        android:layout_height="56dp"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:text="Start Connection"
+        android:textColor="#FAF7F7"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="91dp"
+        android:layout_height="99dp"
+        android:background="@drawable/button_bg_round"
+        android:text="SEND"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/colorAccent" />
+
+
+</LinearLayout>
